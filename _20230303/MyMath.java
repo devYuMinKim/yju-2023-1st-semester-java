@@ -5,4 +5,8 @@ public class MyMath {
   static int add(int argX, int argY) {
     return argX + argY;
   }
+
+  static double square(double i) {
+    return i * i;
+  }
 }

@@ -11,5 +11,8 @@ public class MyMathTest {
     // 7 + 8 결과 출력
     sum = MyMath.add(7, 8);
     System.out.println("7과 8의 합은 " + sum);
+
+    System.out.println(MyMath.square(10));  // 100
+    System.out.println(MyMath.square(3.14));  // 9.8596
   }
 }
