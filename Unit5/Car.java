@@ -1,5 +1,3 @@
-package _20230303;
-
 public class Car {
   private int SPEED_LIMIT = 10; // 기어 1단 - 10, 2단 - 20 ... n단 - 10n
   private int MAX_SPEED = 80;   // 최고 속도
@@ -18,10 +16,10 @@ public class Car {
     speed++;
 
     // 기어 변속 하지 않고 버틸 수 있는 최대속도
-    int maximumSpeed = gear * SPEED_LIMIT;
+    int maxSpeed = gear * SPEED_LIMIT;
 
     // 기어 변경
-    if (speed == maximumSpeed) {
+    if (speed == maxSpeed) {
       this.gear++;
       System.out.println("기어 변경 " + gear);
     }
@@ -42,10 +40,10 @@ public class Car {
     speed--;
 
     // 기어 변속 하지 않고 버틸 수 있는 최소속도
-    int minimumSpeed = gear * SPEED_LIMIT;
+    int minSpeed = gear * SPEED_LIMIT;
 
     // 기어 변경
-    if (speed == minimumSpeed) {
+    if (speed == minSpeed) {
       this.gear--;
       System.out.println("기어 변경 " + gear);
     }
@@ -54,7 +52,6 @@ public class Car {
   // toString 을 오버라이딩하여 해당 클래스의 맴버에 접근
   @Override
   public String toString() {
-    return String.format("Car [color= %s, speed= %d, gear= %d]",
-    color, speed, gear);
+    return String.format("Car [color= %s, speed= %d, gear= %d]", color, speed, gear);
   };
 }

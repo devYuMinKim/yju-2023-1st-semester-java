@@ -1,24 +1,22 @@
-package _20230303;
-
 public class CarTest {
   public static void main(String[] args) {
     // 객체 생성
-    Car car0 = new Car();
+    Car car = new Car();
 
     // 색상 설정
-    car0.setColor("green");
+    car.setColor("green");
 
-    // 증속
+    // 가속
     for (int i = 0 ; i < 80 ; i += 5) {
-      car0.speedUp();
+      car.speedUp();
     }
 
     // 차의 상태 출력
-    System.out.println(car0);
+    System.out.println(car);
 
     // 감속
     for (int i = 0 ; i < 100 ; i += 5) {
-      car0.speedDown();
+      car.speedDown();
     }
   }
 }

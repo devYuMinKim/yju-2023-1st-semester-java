@@ -1,5 +1,3 @@
-package _20230303;
-
 public class Television {
   private int channel;    // 채널
   private int volume;     // 볼륨

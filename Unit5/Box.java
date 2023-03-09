@@ -1,5 +1,3 @@
-package _20230303;
-
 public class Box {
   private int width;                  // 가로
   private int length;                 // 세로
@@ -27,8 +25,7 @@ public class Box {
 
     // 멤버 값이 입력된 경우
     if (isSet) { 
-      msg = String.format("상자의 가로, 세로, 높이는 %d, %d, %d입니다",
-      width, length, height);
+      msg = String.format("상자의 가로, 세로, 높이는 %d, %d, %d입니다.", width, length, height);
     }
     // 멤버 값이 입력되지 않는 경우
     else {
